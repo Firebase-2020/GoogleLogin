@@ -3,5 +3,6 @@
 
 
 - packages installed
-npm add react-navigation@^3.0.9
-npm add firebase@^5.7.3
+- npm add react-navigation@^3.0.9
+- npm add firebase@^5.7.3
+- expo install react-native-screens && react-native-gesture-handler

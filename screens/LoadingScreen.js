@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ActivityIndicator } from 'react-native';
+import firebase from 'firebase';
 
 class LoadingScreen extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class LoadingScreen extends Component {
   render() {
     return (
       <View>
-        <Text> LoadingScreen </Text>
+        <ActivityIndicator size={'large'} />
       </View>
     );
   }
