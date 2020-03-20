@@ -1,5 +1,7 @@
 import React from 'react';
+import * as Expo from 'expo';
 import { StyleSheet, Text, View } from 'react-native';
+import { createSwitchNavigator } from 'react-navigation'
 
 export default function App() {
   return (
@@ -8,6 +10,12 @@ export default function App() {
     </View>
   );
 }
+
+const AppSwithNavigator = createSwitchNavigator({
+  LoadingScreen: LoadingScreen,
+  LoginScreen: LoginScreen,
+  DashboardScreen: DashboardScreen 
+})
 
 const styles = StyleSheet.create({
   container: {
